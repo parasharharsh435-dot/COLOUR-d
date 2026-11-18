@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>COLOUR d</h1>
+        <div id="edit" contenteditable="true"> Write here!
+        </div>
+        <div class="controls">
+
+            <div class="control-grp">
+        <h3>Box color</h3>
+        <button class="color-btn pink" onclick="changeBoxColor('palevioletred')"></button>
+        <button class="color-btn red" onclick="changeBoxColor('rgb(192, 47, 47)')"></button>
+        <button class="color-btn blue" onclick="changeBoxColor('rgb(77, 77, 220)')"></button>
+            </div>
+            <div class="control-grp">
+        <h3>text color</h3>
+
+        <button class="color-btn black" onclick="changetextColor('black')"></button>
+        <button class="color-btn green" onclick="changetextColor('rgb(9, 106, 9)')"></button>
+        <button class="color-btn purple" onclick="changetextColor('rgb(143, 42, 143)')"></button>
+            </div>
+
+            <div class="control-grp">
+        <h3>Text Style</h3>
+        <button style="font-family: cursive;" onclick="changeFont('cursive')">Cursive</button>
+        <button style="font-family:'Times New Roman', Times, serif;" onclick="changeFont('Times new Roman')">Times new Roman</button>
+        <button style="font-family: 'Courier New', Courier, monospace;" onclick="changeFont('Courier New')">Courier New</button>
+        </div>
+            </div>
+    </center>
+
+    <script>
+        let editor = document.getElementById("edit");
+
+        function changeBoxColor(color){
+            editor.style.backgroundColor=color;
+        }
+
+        function changetextColor(color){
+            editor.style.color=color;
+        }
+
+        function changeFont(font){
+            editor.style.fontFamily = font;
+        }
+    </script>
+    
+</body>
+</html>

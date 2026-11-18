@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+}
+
+#edit{
+    width: 500px;
+    height:250px;
+    background-color: lightblue;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    font-size:35px ;
+}
+
+.controls{
+
+    display: flex;
+    justify-content: center;
+    gap:35px;
+    align-items:flex-start;
+
+}
+
+.control-grp{
+    text-align: center;
+
+}
+
+.color-btn{
+    width: 28px;
+    height:28px;
+    border-radius:50%;
+    outline: none;
+    cursor: pointer;
+}
+.pink{
+    background-color: palevioletred;
+}
+.red{
+    background-color: rgb(192, 47, 47);
+}
+
+.blue{
+    background-color: rgb(77, 77, 220);
+}
+
+.black{
+    background-color: black;
+}
+.green{
+ background-color: rgb(9, 106, 9);
+}
+
+.purple{
+   background-color:rgb(143, 42, 143);
+}
